@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="C482.PartController">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0" />
+      <HBox prefHeight="48.0" prefWidth="600.0" VBox.vgrow="NEVER">
+         <children>
+            <Label fx:id="partLabel" text="Add Part" HBox.hgrow="NEVER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="60.0" right="50.0" />
+               </HBox.margin>
+            </Label>
+            <RadioButton fx:id="inHouse" mnemonicParsing="false" selected="true" text="In-House" HBox.hgrow="NEVER">
+               <HBox.margin>
+                  <Insets right="50.0" />
+               </HBox.margin>
+               <toggleGroup>
+                  <ToggleGroup fx:id="partToggle" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="outsourced" mnemonicParsing="false" text="Outsourced" toggleGroup="$partToggle" HBox.hgrow="NEVER" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="20.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="15.0" prefWidth="600.0" VBox.vgrow="NEVER">
+         <children>
+            <Label text="ID" HBox.hgrow="NEVER">
+               <padding>
+                  <Insets right="100.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="id" disable="true" promptText="Auto Gen - Disabled" HBox.hgrow="NEVER">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+         <padding>
+            <Insets bottom="15.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="88.0" prefHeight="15.0" prefWidth="600.0" VBox.vgrow="NEVER">
+         <children>
+            <Label text="Name" HBox.hgrow="NEVER">
+               <padding>
+                  <Insets right="80.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="name" HBox.hgrow="NEVER" />
+         </children>
+         <padding>
+            <Insets bottom="15.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="229.0" prefHeight="15.0" prefWidth="600.0" VBox.vgrow="NEVER">
+         <children>
+            <Label text="Inv" HBox.hgrow="NEVER">
+               <padding>
+                  <Insets right="96.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="inv" HBox.hgrow="NEVER" />
+         </children>
+         <padding>
+            <Insets bottom="15.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="229.0" prefHeight="15.0" prefWidth="600.0" VBox.vgrow="NEVER">
+         <children>
+            <Label text="Price/Cost" HBox.hgrow="NEVER">
+               <padding>
+                  <Insets right="57.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="cost" HBox.hgrow="NEVER" />
+         </children>
+         <padding>
+            <Insets bottom="15.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="270.0" prefHeight="15.0" prefWidth="600.0" VBox.vgrow="NEVER">
+         <children>
+            <Label text="Max" HBox.hgrow="NEVER">
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets right="88.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="max" HBox.hgrow="NEVER" />
+            <Label text="Min" HBox.hgrow="NEVER">
+               <padding>
+                  <Insets left="25.0" right="25.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="min" HBox.hgrow="NEVER" />
+         </children>
+         <padding>
+            <Insets bottom="15.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="311.0" prefHeight="15.0" prefWidth="600.0" VBox.vgrow="NEVER">
+         <children>
+            <Label fx:id="machCompId" text="Machine ID" HBox.hgrow="NEVER">
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets right="50.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="machComp" HBox.hgrow="NEVER" />
+         </children>
+         <padding>
+            <Insets bottom="15.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="28.0" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="NEVER">
+         <children>
+            <Button fx:id="save" mnemonicParsing="false" text="Save" HBox.hgrow="NEVER">
+               <HBox.margin>
+                  <Insets left="350.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="cancel" mnemonicParsing="false" text="Cancel" HBox.hgrow="NEVER">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="errorLabel" layoutX="14.0" layoutY="4.0" textFill="#e52121">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</VBox>
